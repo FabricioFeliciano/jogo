@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Um jogo multiplayer bastante simples para testarmos o Socket.io",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git"
