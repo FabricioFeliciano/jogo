@@ -25,8 +25,8 @@ webApp.get('/', function (req, res) {
 
 // Coisas que só uma POC vai conhecer
 webApp.get('/superadmin', function (req, res) {
-    userName = req.query.name;
-    res.sendFile(__dirname + '/game-admin.html')
+  userName = req.query.name;
+  res.sendFile(__dirname + '/game-admin.html')
 })
 
 webApp.get('/collect.mp3', function (req, res) {
@@ -125,8 +125,8 @@ io.on('connection', function (socket) {
 
 });
 
-webServer.listen(3000, function () {
-  console.log('> Server listening on port:', 3000)
+webServer.listen(process.env.PORT, function () {
+  console.log('> Server listening on port:', process.env.PORT)
 });
 
 function createGame() {
