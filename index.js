@@ -125,8 +125,8 @@ io.on('connection', function (socket) {
 
 });
 
-webServer.listen(process.env.PORT, function () {
-  console.log('> Server listening on port:', process.env.PORT)
+webServer.listen(process.env.PORT || 3333, function () {
+  console.log('> Server listening on port:', process.env.PORT || 3333)
 });
 
 function createGame() {
